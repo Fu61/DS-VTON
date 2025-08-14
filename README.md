@@ -3,7 +3,7 @@
 [📚 Paper](https://arxiv.org/abs/2506.00908) - [🤖 Code](https://github.com/Fu61/DS-VTON)
 
 <div align="center">
-  <img src="" width="100%" height="100%"/>
+  <img src="assets/DS-VTON.png" width="100%" height="100%"/>
 </div>
 
 ## Abstract
