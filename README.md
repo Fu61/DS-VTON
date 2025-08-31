@@ -26,7 +26,7 @@ Qualitative visual results comparison with other methods.
 
 ## Installation
 ```shell
-git clone https://github.com/Fu61/DS-VTON
+git clone https://github.com/Fu61/DS-VTON.git
 cd DS-VTON
 conda env create -f env.yaml
 conda activate ds-vton
