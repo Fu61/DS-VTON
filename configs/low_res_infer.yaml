@@ -1,0 +1,31 @@
+ref_config_path: './checkpoints/reference_unet/config.json'
+ref_weights_path: './checkpoints/reference_unet/low_reference_unet.pth'
+denoising_config_path: './checkpoints/denoising_unet/config.json'
+denoising_weights_path: './checkpoints/denoising_unet/low_denoising_unet.pth'
+vae_model_path: '/data/Try_on/Warp_Animate/pretrained_weights/sd-vae-ft-mse'
+
+weight_dtype: 'fp16'  # [fp16, fp32]
+enable_zero_snr: True 
+
+dataset:
+  #if you want to infer only one image, please change infer_type to single
+  infer_type: "VITON-HD"  # [single, VITON-HD]
+  image_height: 512
+  image_width: 384
+  data_root: "/data/Try_on/datasets/VITON-HD"
+  batch_size: 8
+  cloth_path: "/data/Try_on/datasets/VITON-HD/test/cloth/14096_00.jpg"
+  person_path: "/data/Try_on/datasets/VITON-HD/test/image/02532_00.jpg"
+  save_path: "./output/low_resolution"
+
+noise_scheduler_kwargs:
+  num_train_timesteps: 1000
+  beta_start:          0.00085
+  beta_end:            0.012
+  beta_schedule:       "scaled_linear"
+  steps_offset:        1
+  clip_sample:         false
+
+seed: 42
+
+data_root: "/data/Try_on/datasets/VITON-HD"
