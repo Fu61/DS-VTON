@@ -32,8 +32,8 @@ conda env create -f env.yaml
 conda activate ds-vton
 pip install -r requirements.txt
 ```
-
 ## Inference
+Download the VITON-HD checkpoints from [DS-VTON](https://huggingface.co/Fufeng61/DS-VTON) and place them in the specified checkpoints/ directory.
 ```shell
 ## low-resolution result
 python ./inference/low_res_infer.py --config ./configs/low_res_infer.yaml
